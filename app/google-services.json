@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "1315166345",
+    "firebase_url": "https://abhaychem-7159f.firebaseio.com",
+    "project_id": "abhaychem-7159f",
+    "storage_bucket": "abhaychem-7159f.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1315166345:android:b0623d50ec7214a8",
+        "android_client_info": {
+          "package_name": "com.example.chief_kmv.abhaychem"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1315166345-8ovtnhvh9jr3l2smhdgr8qivokfc0vt1.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chief_kmv.abhaychem",
+            "certificate_hash": "c91fb5695048256b49ba176cccfa203fb79de90a"
+          }
+        },
+        {
+          "client_id": "1315166345-gkmof6phv9j102hv1gpl4f48pc8h3lgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyA3cRX0nsS4xkgbtv1-XuMnGn5VA9lhZ4w"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1315166345-gkmof6phv9j102hv1gpl4f48pc8h3lgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

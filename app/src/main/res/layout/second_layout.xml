@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="364dp"
+        android:layout_height="618dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-2dp">
+
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="32dp"
+            android:text="Order Details Submission Form"
+            android:textAlignment="center"
+            android:textAllCaps="true"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:layout_editor_absoluteX="0dp"
+            tools:layout_editor_absoluteY="16dp" />
+
+        <EditText
+            android:id="@+id/orderid"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textView"
+            android:layout_centerHorizontal="true"
+            android:hint="Enter Order ID"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="122dp"
+            tools:layout_editor_absoluteY="102dp" />
+
+        <EditText
+            android:id="@+id/product"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/orderid"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Name of Product"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="96dp"
+            tools:layout_editor_absoluteY="164dp" />
+
+        <EditText
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/product"
+            android:layout_alignRight="@+id/product"
+            android:layout_below="@+id/product"
+            android:layout_marginTop="10dp"
+            android:hint="Enter Quantity of Product"
+            android:inputType="number"
+            tools:layout_editor_absoluteX="87dp"
+            tools:layout_editor_absoluteY="277dp" />
+
+        <EditText
+            android:id="@+id/village"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/date_box"
+            android:layout_alignRight="@+id/date_box"
+            android:layout_below="@+id/quantity"
+            android:layout_marginTop="15dp"
+            android:hint="Enter Village Name"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="111dp"
+            tools:layout_editor_absoluteY="298dp" />
+
+        <EditText
+            android:id="@+id/date_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/firebase_btn"
+            android:layout_alignEnd="@+id/order_date_box"
+            android:layout_alignRight="@+id/order_date_box"
+            android:layout_marginEnd="6dp"
+            android:layout_marginRight="6dp"
+            android:hint="Enter Delivery Date"
+            android:inputType="date"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="358dp" />
+
+        <TextView
+            android:id="@+id/abc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/village"
+            android:layout_marginTop="20dp"
+            android:layout_toEndOf="@+id/orderid"
+            android:layout_toRightOf="@+id/orderid"
+            android:text="Order Date"
+            android:textSize="20sp"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="358dp" />
+
+        <Button
+            android:id="@+id/order_date_box"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/abc"
+            android:layout_alignBottom="@+id/abc"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="30dp"
+            android:layout_marginStart="30dp"
+            android:text="Enter Order Date"
+            tools:layout_editor_absoluteX="113dp"
+            tools:layout_editor_absoluteY="358dp" />
+
+        <Button
+            android:id="@+id/firebase_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/back"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginBottom="6dp"
+            android:layout_marginEnd="58dp"
+            android:layout_marginRight="58dp"
+            android:text="Upload"
+            tools:layout_editor_absoluteX="200dp"
+            tools:layout_editor_absoluteY="424dp" />
+
+        <Button
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/abc"
+            android:layout_marginEnd="63dp"
+            android:layout_marginRight="63dp"
+            android:layout_marginTop="107dp"
+            android:layout_toLeftOf="@+id/firebase_btn"
+            android:layout_toStartOf="@+id/firebase_btn"
+            android:onClick="OnBack"
+            android:text="Back" />
+
+
+
+
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
